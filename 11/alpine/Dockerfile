@@ -26,7 +26,7 @@ ARG VERSION=4.7
 ARG user=jenkins
 ARG group=jenkins
 ARG uid=1000
-ARG gid=1000
+ARG gid=985
 
 RUN addgroup -g ${gid} ${group}
 RUN adduser -h /home/${user} -u ${uid} -G ${group} -D ${user}
